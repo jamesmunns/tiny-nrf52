@@ -3,6 +3,7 @@
 
 // Panic provider crate
 use panic_persist;
+use cortex_m;
 
 // Used to set the program entry point
 use cortex_m_rt::entry;
@@ -17,8 +18,11 @@ use dwm1001::{
 
 #[entry]
 fn main() -> ! {
-    let _ = inner_main();
-    panic!();
+    if let Ok(_) = inner_main() {
+        cortex_m::peripheral::SCB::sys_reset();
+    } else {
+        panic!("Unexpected Error!");
+    }
 }
 
 fn inner_main() -> Result<(), ()> {
