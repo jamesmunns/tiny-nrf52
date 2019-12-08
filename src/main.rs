@@ -18,6 +18,11 @@ use dwm1001::{
 
 #[entry]
 fn main() -> ! {
+    let _ = inner_main();
+    panic!();
+}
+
+fn inner_main() -> Result<(), ()> {
     let mut board = DWM1001::take().unwrap();
     let mut timer = board.TIMER0.constrain();
     let mut _rng = board.RNG.constrain();

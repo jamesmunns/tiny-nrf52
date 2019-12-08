@@ -1,5 +1,5 @@
    text	   data	    bss	    dec	    hex	filename
-  14512	      0	      4	  14516	   38b4	target/thumbv7em-none-eabihf/release/tiny-nrf52
+  14516	      0	      4	  14520	   38b8	target/thumbv7em-none-eabihf/release/tiny-nrf52
 
 ===============
 
@@ -7,7 +7,7 @@ File  .text   Size            Crate Name
 0.2%   9.7%   812B              std <char as core::fmt::Debug>::fmt
 0.2%   9.4%   790B              std core::str::slice_error_fail
 0.2%   8.7%   728B              std core::fmt::Formatter::pad
-0.2%   7.6%   634B        [Unknown] main
+0.2%   7.6%   634B       tiny_nrf52 tiny_nrf52::inner_main
 0.1%   6.6%   550B              std core::fmt::Formatter::pad_integral
 0.1%   6.3%   530B              std core::fmt::write
 0.1%   5.9%   490B              std core::slice::memchr::memchr
@@ -48,6 +48,7 @@ File  .text   Size            Crate Name
 0.0%   0.1%     6B              std <&mut W as core::fmt::Write>::write_str
 0.0%   0.1%     6B              std core::fmt::ArgumentV1::show_usize
 0.0%   0.1%     6B              std core::fmt::num::imp::<impl core::fmt::Display for u...
+0.0%   0.1%     6B        [Unknown] main
 0.0%   0.0%     4B         cortex_m cortex_m::interrupt::disable
 0.0%   0.0%     2B      cortex_m_rt HardFault_
 0.0%   0.0%     2B              std core::ptr::real_drop_in_place
@@ -58,4 +59,4 @@ File  .text   Size            Crate Name
 0.0%   0.0%     2B              std core::ptr::real_drop_in_place
 0.0%   0.0%     2B              std core::ptr::real_drop_in_place
 0.0%   0.0%     0B                  And 0 smaller methods. Use -n N to show more.
-2.1% 100.0% 8.2KiB                  .text section size, the file size is 390.1KiB
+2.1% 100.0% 8.2KiB                  .text section size, the file size is 390.3KiB
