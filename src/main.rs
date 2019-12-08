@@ -25,8 +25,8 @@ fn main() -> ! {
     }
 }
 
-fn inner_main() -> Result<(), ()> {
-    let mut board = DWM1001::take().ok_or(())?;
+fn inner_main() -> Result<(), &'static str> {
+    let mut board = DWM1001::take().ok_or("Error getting board!")?;
     let mut timer = board.TIMER0.constrain();
     let mut _rng = board.RNG.constrain();
     let mut toggle = false;
@@ -34,7 +34,7 @@ fn inner_main() -> Result<(), ()> {
     if let Some(msg) = panic_persist::get_panic_message_bytes() {
         // write the error message in reasonable chunks
         for i in msg.chunks(255) {
-            board.uart.write(i).map_err(drop)?;
+            board.uart.write(i).map_err(|_| "Error writing error!")?;
         }
     }
 
@@ -56,7 +56,7 @@ fn inner_main() -> Result<(), ()> {
         let mut buf = [0u8; MSG.len()];
         buf.copy_from_slice(MSG);
 
-        board.uart.write(&buf).map_err(drop)?;
+        board.uart.write(&buf).map_err(|_| "Error writing hello!")?;
 
         timer.delay(1_000_000);
     }

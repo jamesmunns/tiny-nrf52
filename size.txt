@@ -1,13 +1,13 @@
    text	   data	    bss	    dec	    hex	filename
-   4816	      0	      4	   4820	   12d4	target/thumbv7em-none-eabihf/release/tiny-nrf52
+   4800	      0	      4	   4804	   12c4	target/thumbv7em-none-eabihf/release/tiny-nrf52
 
 ===============
 
 File  .text   Size         Crate Name
-0.2%  18.8%   728B           std core::fmt::Formatter::pad
-0.2%  18.7%   724B    tiny_nrf52 tiny_nrf52::inner_main
-0.2%  15.2%   588B           std core::fmt::num::imp::fmt_u32
-0.1%  13.7%   530B           std core::fmt::write
+0.2%  18.9%   728B           std core::fmt::Formatter::pad
+0.2%  18.9%   728B     [Unknown] main
+0.2%  15.3%   588B           std core::fmt::num::imp::fmt_u32
+0.1%  13.8%   530B           std core::fmt::write
 0.1%   5.8%   224B panic_persist <&T as core::fmt::Display>::fmt
 0.1%   5.4%   208B panic_persist <&mut W as core::fmt::Write>::write_char
 0.0%   2.9%   112B   cortex_m_rt Reset
@@ -15,7 +15,7 @@ File  .text   Size         Crate Name
 0.0%   2.0%    78B panic_persist <&mut W as core::fmt::Write>::write_str
 0.0%   1.7%    66B panic_persist rust_begin_unwind
 0.0%   1.7%    64B           std core::panicking::panic_bounds_check
-0.0%   1.4%    56B           std core::panicking::panic
+0.0%   1.5%    56B           std core::panicking::panic
 0.0%   1.3%    50B           std core::fmt::Formatter::pad_integral::write_prefix
 0.0%   1.1%    42B           std core::panicking::panic_fmt
 0.0%   1.0%    38B panic_persist <&mut W as core::fmt::Write>::write_fmt
@@ -23,7 +23,6 @@ File  .text   Size         Crate Name
 0.0%   1.0%    38B           std <&T as core::fmt::Display>::fmt
 0.0%   0.9%    36B panic_persist core::fmt::Write::write_fmt
 0.0%   0.5%    18B           std <T as core::any::Any>::type_id
-0.0%   0.5%    18B     [Unknown] main
 0.0%   0.4%    14B           std <&T as core::fmt::Display>::fmt
 0.0%   0.3%    12B           std <&T as core::fmt::Display>::fmt
 0.0%   0.2%     6B   cortex_m_rt ResetTrampoline
