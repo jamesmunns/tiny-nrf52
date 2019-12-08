@@ -234,8 +234,8 @@ dependencies = [
 ]
 
 [[package]]
-name = "panic-persist"
-version = "0.2.1"
+name = "panic-reset"
+version = "0.1.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 dependencies = [
  "cortex-m 0.6.1 (registry+https://github.com/rust-lang/crates.io-index)",
@@ -382,7 +382,7 @@ dependencies = [
  "embedded-hal 0.2.3 (registry+https://github.com/rust-lang/crates.io-index)",
  "heapless 0.5.1 (registry+https://github.com/rust-lang/crates.io-index)",
  "nb 0.1.2 (registry+https://github.com/rust-lang/crates.io-index)",
- "panic-persist 0.2.1 (registry+https://github.com/rust-lang/crates.io-index)",
+ "panic-reset 0.1.0 (registry+https://github.com/rust-lang/crates.io-index)",
 ]
 
 [[package]]
@@ -444,7 +444,7 @@ dependencies = [
 "checksum nrf52-hal-common 0.8.1 (registry+https://github.com/rust-lang/crates.io-index)" = "03dcdf72cd52a1c4829905e08a90ad6f4dc0f9d15ecf1883cc74f098199aa873"
 "checksum nrf52832-hal 0.8.1 (registry+https://github.com/rust-lang/crates.io-index)" = "dd4803f1d08e6a4c8726ae68b40cecf7c2ab05f49b1ce29af932d052cb61114c"
 "checksum nrf52832-pac 0.8.0 (registry+https://github.com/rust-lang/crates.io-index)" = "3c4545414415bddd872f13c0a5418ecc380e34347a52cb048cfed38c1b0957fa"
-"checksum panic-persist 0.2.1 (registry+https://github.com/rust-lang/crates.io-index)" = "dd2e692a5954e3eb0c16f5dbaa75c4332a78d85851521f138c04ad95d6f5ee42"
+"checksum panic-reset 0.1.0 (registry+https://github.com/rust-lang/crates.io-index)" = "acee8535a38487c5c70d61ee87284710452cb3b265304463f20a0c5327a4a8a5"
 "checksum proc-macro2 0.3.8 (registry+https://github.com/rust-lang/crates.io-index)" = "1b06e2f335f48d24442b35a19df506a835fb3547bc3c06ef27340da9acf5cae7"
 "checksum proc-macro2 1.0.6 (registry+https://github.com/rust-lang/crates.io-index)" = "9c9e470a8dc4aeae2dee2f335e8f533e2d4b347e1434e5671afc49b054592f27"
 "checksum quote 0.5.2 (registry+https://github.com/rust-lang/crates.io-index)" = "9949cfe66888ffe1d53e6ec9d9f3b70714083854be20fd5e271b232a017401e8"

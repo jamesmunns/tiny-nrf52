@@ -2,7 +2,7 @@
 #![no_main]
 
 // Panic provider crate
-use panic_persist as _;
+use panic_reset as _;
 
 
 // Used to set the program entry point
