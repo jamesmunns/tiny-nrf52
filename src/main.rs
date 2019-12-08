@@ -2,7 +2,7 @@
 #![no_main]
 
 // Panic provider crate
-use panic_persist;
+use panic_reset as _;
 use cortex_m;
 
 // Used to set the program entry point
@@ -29,13 +29,6 @@ fn inner_main() -> Result<(), &'static str> {
     let mut timer = board.TIMER0.constrain();
     let mut _rng = board.RNG.constrain();
     let mut toggle = false;
-
-    if let Some(msg) = panic_persist::get_panic_message_bytes() {
-        // write the error message in reasonable chunks
-        for i in msg.chunks(255) {
-            board.uart.write(i).map_err(|_| "Error writing error!")?;
-        }
-    }
 
     loop {
         // board.leds.D9  - Top LED GREEN
