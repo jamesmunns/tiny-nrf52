@@ -18,10 +18,9 @@ use dwm1001::{
 
 #[entry]
 fn main() -> ! {
-    if let Ok(_) = inner_main() {
-        cortex_m::peripheral::SCB::sys_reset();
-    } else {
-        panic!("Unexpected Error!");
+    match inner_main() {
+        Ok(()) => cortex_m::peripheral::SCB::sys_reset(),
+        Err(e) => panic!(e),
     }
 }
 

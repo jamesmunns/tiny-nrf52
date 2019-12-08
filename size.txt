@@ -1,21 +1,21 @@
    text	   data	    bss	    dec	    hex	filename
-   4800	      0	      4	   4804	   12c4	target/thumbv7em-none-eabihf/release/tiny-nrf52
+   4864	      0	      4	   4868	   1304	target/thumbv7em-none-eabihf/release/tiny-nrf52
 
 ===============
 
 File  .text   Size         Crate Name
-0.2%  18.9%   728B           std core::fmt::Formatter::pad
-0.2%  18.9%   728B     [Unknown] main
-0.2%  15.3%   588B           std core::fmt::num::imp::fmt_u32
-0.1%  13.8%   530B           std core::fmt::write
-0.1%   5.8%   224B panic_persist <&T as core::fmt::Display>::fmt
-0.1%   5.4%   208B panic_persist <&mut W as core::fmt::Write>::write_char
+0.2%  19.9%   776B     [Unknown] main
+0.2%  18.7%   728B           std core::fmt::Formatter::pad
+0.2%  15.1%   588B           std core::fmt::num::imp::fmt_u32
+0.1%  13.6%   530B           std core::fmt::write
+0.1%   5.7%   224B panic_persist <&T as core::fmt::Display>::fmt
+0.1%   5.3%   208B panic_persist <&mut W as core::fmt::Write>::write_char
 0.0%   2.9%   112B   cortex_m_rt Reset
 0.0%   2.7%   104B     [Unknown] __aeabi_memcpy
 0.0%   2.0%    78B panic_persist <&mut W as core::fmt::Write>::write_str
 0.0%   1.7%    66B panic_persist rust_begin_unwind
-0.0%   1.7%    64B           std core::panicking::panic_bounds_check
-0.0%   1.5%    56B           std core::panicking::panic
+0.0%   1.6%    64B           std core::panicking::panic_bounds_check
+0.0%   1.4%    56B           std core::panicking::panic
 0.0%   1.3%    50B           std core::fmt::Formatter::pad_integral::write_prefix
 0.0%   1.1%    42B           std core::panicking::panic_fmt
 0.0%   1.0%    38B panic_persist <&mut W as core::fmt::Write>::write_fmt
@@ -35,4 +35,4 @@ File  .text   Size         Crate Name
 0.0%   0.1%     2B   cortex_m_rt DefaultHandler_
 0.0%   0.1%     2B           std core::ptr::real_drop_in_place
 0.0%   0.0%     0B               And 0 smaller methods. Use -n N to show more.
-1.1% 100.0% 3.8KiB               .text section size, the file size is 352.1KiB
+1.1% 100.0% 3.8KiB               .text section size, the file size is 352.3KiB
