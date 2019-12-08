@@ -1,62 +1,39 @@
    text	   data	    bss	    dec	    hex	filename
-  14516	      0	      4	  14520	   38b8	target/thumbv7em-none-eabihf/release/tiny-nrf52
+   4708	      0	      4	   4712	   1268	target/thumbv7em-none-eabihf/release/tiny-nrf52
 
 ===============
 
-File  .text   Size            Crate Name
-0.2%   9.7%   812B              std <char as core::fmt::Debug>::fmt
-0.2%   9.4%   790B              std core::str::slice_error_fail
-0.2%   8.7%   728B              std core::fmt::Formatter::pad
-0.2%   7.6%   634B       tiny_nrf52 tiny_nrf52::inner_main
-0.1%   6.6%   550B              std core::fmt::Formatter::pad_integral
-0.1%   6.3%   530B              std core::fmt::write
-0.1%   5.9%   490B              std core::slice::memchr::memchr
-0.1%   4.3%   360B nrf52_hal_common <nrf52_hal_common::uarte::Error as core::fmt::Debug...
-0.1%   4.3%   360B              std core::fmt::num::<impl core::fmt::Debug for usize>::fmt
-0.1%   4.2%   354B        rand_core <&T as core::fmt::Debug>::fmt
-0.1%   4.2%   348B              std <core::fmt::builders::PadAdapter as core::fmt::Writ...
-0.1%   3.0%   248B              std core::unicode::printable::check
-0.1%   2.8%   238B              std core::fmt::num::imp::fmt_u32
-0.1%   2.7%   224B    panic_persist <&T as core::fmt::Display>::fmt
-0.1%   2.5%   208B    panic_persist <&mut W as core::fmt::Write>::write_char
-0.0%   1.6%   138B              std core::fmt::Write::write_char
-0.0%   1.3%   112B      cortex_m_rt Reset
-0.0%   1.2%   104B        [Unknown] __aeabi_memcpy
-0.0%   1.2%    98B              std core::result::unwrap_failed
-0.0%   1.1%    94B              std memcmp
-0.0%   0.9%    78B    panic_persist <&mut W as core::fmt::Write>::write_str
-0.0%   0.9%    74B              std <core::ops::range::Range<Idx> as core::fmt::Debug>:...
-0.0%   0.8%    68B              std core::slice::slice_index_order_fail
-0.0%   0.8%    68B              std core::slice::slice_index_len_fail
-0.0%   0.8%    66B    panic_persist rust_begin_unwind
-0.0%   0.8%    64B              std core::panicking::panic_bounds_check
-0.0%   0.7%    56B              std core::panicking::panic
-0.0%   0.6%    50B              std core::fmt::Formatter::pad_integral::write_prefix
-0.0%   0.5%    42B              std core::panicking::panic_fmt
-0.0%   0.5%    38B    panic_persist <&mut W as core::fmt::Write>::write_fmt
-0.0%   0.5%    38B         cortex_m cortex_m::peripheral::scb::<impl cortex_m::peripher...
-0.0%   0.5%    38B              std <&mut W as core::fmt::Write>::write_fmt
-0.0%   0.5%    38B              std <&T as core::fmt::Display>::fmt
-0.0%   0.4%    36B    panic_persist core::fmt::Write::write_fmt
-0.0%   0.4%    36B              std core::fmt::Write::write_fmt
-0.0%   0.2%    18B              std <T as core::any::Any>::type_id
-0.0%   0.2%    14B              std <&T as core::fmt::Display>::fmt
-0.0%   0.1%    12B              std <&T as core::fmt::Display>::fmt
-0.0%   0.1%    10B              std <&T as core::fmt::Debug>::fmt
-0.0%   0.1%     6B      cortex_m_rt ResetTrampoline
-0.0%   0.1%     6B              std <&mut W as core::fmt::Write>::write_char
-0.0%   0.1%     6B              std <&mut W as core::fmt::Write>::write_str
-0.0%   0.1%     6B              std core::fmt::ArgumentV1::show_usize
-0.0%   0.1%     6B              std core::fmt::num::imp::<impl core::fmt::Display for u...
-0.0%   0.1%     6B        [Unknown] main
-0.0%   0.0%     4B         cortex_m cortex_m::interrupt::disable
-0.0%   0.0%     2B      cortex_m_rt HardFault_
-0.0%   0.0%     2B              std core::ptr::real_drop_in_place
-0.0%   0.0%     2B      cortex_m_rt DefaultPreInit
-0.0%   0.0%     2B      cortex_m_rt DefaultHandler_
-0.0%   0.0%     2B              std core::ptr::real_drop_in_place
-0.0%   0.0%     2B              std <core::ffi::VaListImpl as core::ops::drop::Drop>::drop
-0.0%   0.0%     2B              std core::ptr::real_drop_in_place
-0.0%   0.0%     2B              std core::ptr::real_drop_in_place
-0.0%   0.0%     0B                  And 0 smaller methods. Use -n N to show more.
-2.1% 100.0% 8.2KiB                  .text section size, the file size is 390.3KiB
+File  .text   Size         Crate Name
+0.2%  19.4%   728B           std core::fmt::Formatter::pad
+0.2%  16.4%   616B    tiny_nrf52 tiny_nrf52::inner_main
+0.2%  15.7%   588B           std core::fmt::num::imp::fmt_u32
+0.1%  14.1%   530B           std core::fmt::write
+0.1%   6.0%   224B panic_persist <&T as core::fmt::Display>::fmt
+0.1%   5.5%   208B panic_persist <&mut W as core::fmt::Write>::write_char
+0.0%   3.0%   112B   cortex_m_rt Reset
+0.0%   2.8%   104B     [Unknown] __aeabi_memcpy
+0.0%   2.1%    78B panic_persist <&mut W as core::fmt::Write>::write_str
+0.0%   1.8%    66B panic_persist rust_begin_unwind
+0.0%   1.7%    64B           std core::panicking::panic_bounds_check
+0.0%   1.5%    56B           std core::panicking::panic
+0.0%   1.3%    50B           std core::fmt::Formatter::pad_integral::write_prefix
+0.0%   1.1%    42B           std core::panicking::panic_fmt
+0.0%   1.0%    38B panic_persist <&mut W as core::fmt::Write>::write_fmt
+0.0%   1.0%    38B      cortex_m cortex_m::peripheral::scb::<impl cortex_m::peripheral:...
+0.0%   1.0%    38B           std <&T as core::fmt::Display>::fmt
+0.0%   1.0%    36B panic_persist core::fmt::Write::write_fmt
+0.0%   0.5%    18B           std <T as core::any::Any>::type_id
+0.0%   0.5%    18B     [Unknown] main
+0.0%   0.4%    14B           std <&T as core::fmt::Display>::fmt
+0.0%   0.3%    12B           std <&T as core::fmt::Display>::fmt
+0.0%   0.2%     6B   cortex_m_rt ResetTrampoline
+0.0%   0.2%     6B           std core::fmt::ArgumentV1::show_usize
+0.0%   0.2%     6B           std core::fmt::num::imp::<impl core::fmt::Display for u32>...
+0.0%   0.1%     4B      cortex_m cortex_m::interrupt::disable
+0.0%   0.1%     2B   cortex_m_rt HardFault_
+0.0%   0.1%     2B           std core::ptr::real_drop_in_place
+0.0%   0.1%     2B   cortex_m_rt DefaultPreInit
+0.0%   0.1%     2B   cortex_m_rt DefaultHandler_
+0.0%   0.1%     2B           std core::ptr::real_drop_in_place
+0.0%   0.0%     0B               And 0 smaller methods. Use -n N to show more.
+1.1% 100.0% 3.7KiB               .text section size, the file size is 345.2KiB

@@ -23,7 +23,7 @@ fn main() -> ! {
 }
 
 fn inner_main() -> Result<(), ()> {
-    let mut board = DWM1001::take().unwrap();
+    let mut board = DWM1001::take().ok_or(())?;
     let mut timer = board.TIMER0.constrain();
     let mut _rng = board.RNG.constrain();
     let mut toggle = false;
@@ -46,7 +46,7 @@ fn inner_main() -> Result<(), ()> {
         let mut buf = [0u8; MSG.len()];
         buf.copy_from_slice(MSG);
 
-        board.uart.write(&buf).unwrap();
+        board.uart.write(&buf).map_err(drop)?;
 
         timer.delay(1_000_000);
     }
