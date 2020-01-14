@@ -46,7 +46,7 @@ fn inner_main() -> Result<(), ()> {
         let mut buf = [0u8; MSG.len()];
         buf.copy_from_slice(MSG);
 
-        board.uart.write(&buf).unwrap();
+        board.uart.write(&buf).map_err(drop).unwrap();
 
         timer.delay(1_000_000);
     }
